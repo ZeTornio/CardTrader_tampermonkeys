@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Display CT Zero in searches
 // @namespace    https://www.cardtrader.com
-// @version      2025-09-28
+// @version      2025-09-29
 // @description  Display prices for CT Zero and 1-Day in search and version pages
 // @author       Sibbob
-// @match        https://www.cardtrader.com/cards/*/versions
+// @match        https://www.cardtrader.com/cards/*/versions*
 // @match        https://www.cardtrader.com/*manasearch_results?*
 // @icon         https://www.cardtrader.com/assets/favicon/favicon-32x32-a5e0283790f269dc65e3d5d886d9ec2ac290bf407249b2c124e7baff5c10080d.png
 // @require      https://raw.githubusercontent.com/CoeJoder/waitForKeyElements.js/refs/heads/master/waitForKeyElements.js
