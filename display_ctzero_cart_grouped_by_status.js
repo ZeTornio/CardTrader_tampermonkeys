@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Display CT Zero cart grouped by status
 // @namespace    https://www.cardtrader.com
-// @version      2025-09-27
+// @version      2025-09-28
 // @description  Display items in CT Zero orders grouped by processing/shipment status
 // @author       Sibbob
 // @match        https://www.cardtrader.com/orders/buyer_future_order
@@ -15,14 +15,16 @@ function main() {
     let futureOrderLineIds = [];
     let textInfo;
     let textHeader;
+    let textInfoN = 0;
 
     //get the list of all cards ordered, and the template for headers
     for (let tr of trs) {
         if (tr.classList.length > 0 ){
             if (tr.classList.contains(TEXT_HEADER_CLASS)) {
                 textHeader = tr;
-            } else if(tr.classList.contains(TEXT_INFO_CLASS)){
+            } else if(tr.classList.contains(TEXT_INFO_CLASS) && textInfoN < 2){
                 textInfo = tr;
+                textInfoN++;
             }
         } else {
             if (tr.dataset.testId.endsWith("pending")){
