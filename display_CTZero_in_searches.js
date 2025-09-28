@@ -2,7 +2,7 @@
 // @name         Display CT Zero in searches
 // @namespace    https://www.cardtrader.com
 // @version      2025-09-28
-// @description  Display items in Cardtrader Zero orders grouped by processing/shipment status
+// @description  Display prices for CT Zero and 1-Day in search and version pages
 // @author       Sibbob
 // @match        https://www.cardtrader.com/cards/*/versions
 // @match        https://www.cardtrader.com/*manasearch_results?*
